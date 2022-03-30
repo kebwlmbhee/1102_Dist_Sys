@@ -4,15 +4,25 @@
 
 ![1.png](1.png)
 
-[Promethous 各層分析](https://www.twblogs.net/a/5cbf93cfbd9eee3aed785676)
+[Prometheus 各層分析](https://www.twblogs.net/a/5cbf93cfbd9eee3aed785676)
+
+[Prometheus 各層分析(2)/影片](https://www.bilibili.com/video/BV1aZ4y1p79K/)
 
 ### Prometheus 的 Server 用於取得和存儲時序數據至 TSDB，其整體是藉由 pull-based 的設計，該設計不是由Client 將數據提供給 Server，而通常是使用 GET 獲取Target 位置，讓服務去取得相應的指標後進行採集並交由Server
 
-### Retrieval 是收集資料的元件，架設 Prometheus 的時候會從設定的 Pushgateway 或者 Exporter 抓取指標
+### Retrieval => 收集資料的元件，定時從暴露的目標頁面抓取採樣指標(架設 Prometheus 的時候會從設定的 Pushgateway 或者 Exporter 抓取)
 
 ### HTTP server => 提供對外的 http 服務
 
 ### TSDB => 儲存資料庫或查詢
+
+### Storage 是負責將採樣數據寫入指定的時序數據庫存儲。
+
+### Jobs / Exporters => 可以從 Jobs 或 Exporters 中拉取監控數據(靜態)。Exporter 以 Web API 的形式對外暴露數據採集介面。
+
+### Pushgateway => 專門針對 Prometheus 可能還沒來得及 pull 監控數據時，Job 就已經結束(short-lived jobs 或 Exporters 的一些網路問題使得數據沒法及時送至 Server)，Job 可在運行時將監控數據推送至 Pushgateway 中，Server 再從 Pushgateway中拉取數據，防止監控數據丟失。
+
+### Service discovery => 動態的發現服務，拉取數據進行監控，如從 DNS，Kubernetes，Consul 中發現, file_sd 是動態添加和刪除靜態配置的文件中的 target。
 
 ![2.png](2.png)
 
