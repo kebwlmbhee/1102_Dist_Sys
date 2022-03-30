@@ -34,7 +34,7 @@ Arrows indicate request or connection initiation direction
 
 [Prometheus - scrape(含Sequence Graph)](https://qiankunli.github.io/2020/06/25/prometheus_source.html)
 
-似乎 scrape 是靜態？
+~~似乎 scrape 是靜態？~~ scrape 有分靜動態，靜態為 Jobs/exporters；動態為 Service discovery
 
 0329/更 [Prometheus - 大致代碼解析](https://kingjcy.github.io/post/monitor/metrics/prometheus/prometheus-principle/)
 
