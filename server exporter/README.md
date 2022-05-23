@@ -36,7 +36,7 @@ Prometheus會有*my_web_state*和 *external_web_state*兩個 metrices
 ## Example
 ### 情境: 自己的網站死亡
 ```python
-my_web = ["127.0.0.1", 5500] #5000 port未開啟
+my_web = ["127.0.0.1", 5500] #5500 port未開啟
 ```
 *in Prometheus*
 ```
@@ -45,7 +45,7 @@ my_web_state{my_web_state="fail"} 1.0
 ```
 ### 情境: 自己的網站存活
 ```python
-my_web = ["127.0.0.1", 5500] #5000 port已開啟
+my_web = ["127.0.0.1", 5500] #5500 port已開啟
 ```
 *in Prometheus*
 ```
