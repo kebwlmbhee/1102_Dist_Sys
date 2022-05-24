@@ -16,6 +16,12 @@ sleep_interval = 1 # 發送export的間隔時間, 單位為秒
 ```
 
 設定完畢後，啟動程式並透過 Prometheus監聽 exporter的 port(以上面的code為例, 8000)
+```yml
+scrape_configs:
+  - job_name: 'web_state'
+    static_configs:
+    - targets: ['127.0.0.1:8000']
+```
 
 Prometheus會有*my_web_state*和 *external_web_state*兩個 metrices
 
