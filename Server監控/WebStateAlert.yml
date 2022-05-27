@@ -1,0 +1,24 @@
+groups:
+- name: Test
+  rules:
+  - alert: Test_for_My_Web_No_Request # 警告名稱
+    expr: my_web_state{my_web_state = "fail"} == 1 # 警告規則
+    for: 1m # 警告規則符合多久要發送警告
+    labels:
+      severity: page
+    annotations:
+      summary: My Web Test
+  - alert: Test_for_External_No_Request # 警告名稱
+    expr: my_web_state{external_web_state = "fail"} == 1 # 警告規則
+    for: 1m # 警告規則符合多久要發送警告
+    labels:
+      severity: page
+    annotations:
+      summary: External Web Test
+  - alert: Experter_No_Request # 警告名稱
+    expr: up{ job = "web_state"} == 0 # 警告規則
+    for: 1m # 警告規則符合多久要發送警告
+    labels:
+      severity: page
+    annotations:
+      summary: exporter doesn't up
