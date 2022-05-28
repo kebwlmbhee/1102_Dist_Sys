@@ -23,7 +23,7 @@ receivers: # 警告方式，這裡採用email通知
 ```
 - 使用命令列開啟alertmanager並傳入寫好的設定黨和使用port(例如9093)
 ```
-./alertmanager.exe --config.file=alertmanager.yml --culuster.advertise0address=127.0.0.1:9093
+./alertmanager.exe --config.file=alertmanager.yml --cluster.advertise-address=127.0.0.1:9093
 ```
 ## WebStateAlert使用方式
 這部分已經寫好了，可直接下載使用或根據需求自行更改
