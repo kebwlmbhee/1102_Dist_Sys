@@ -40,7 +40,7 @@
 | Current QPS | 每秒查詢速率 | 根據使用MySQL的SHOW STATUS命令查詢到的結果.它是服務器在晟後一秒內執行的語句數星，這個變量包含在存儲程式中執行的語句.與Questions變量不同 |
 | InnoDB Buffer Pool Size | InnoDB Buffer 快取池 | MySQL服務器自從上次重啟運行到現在的時長 |
 | MySQL Status Graph | MySQL 狀態圖 | for Alert |
-| MySQL Connections | MySQL 連結數 | MySQL 服務器自從上次重啟運行到現在的最大連結數 |
+| MySQL Connections | MySQL 連接數 | MySQL 服務器自從上次重啟運行到現在的最大連接數 |
 | MySQL Client Thread Activity | Client Thread 數量 | 未休眠的 Thread 數量 |
 | MySQL Questions | Server 執行的語句 | 與 QPS 不同，這裡只包括 Client 到 Server 的 Question，不包含 Storage process 的 Question |
 | MySQL Thread Cache | Thread 快取 | Clinet 斷線時，快取未滿，則 Client 的 Thread 會被放入快取 |
