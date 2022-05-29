@@ -30,7 +30,7 @@
 
 ## Grafana Graph
 
-![Grafana png](grafana.png)
+![Grafana png](Grafana.png)
 
 | 指標 | 名稱 | 說明 
 |------|------|-----|
