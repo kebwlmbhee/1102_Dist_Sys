@@ -6,6 +6,7 @@
   - [節點功能](#節點功能)
   - [操作步驟](#操作步驟)
   - [影片、PPT連結 <a name="special-title"></a>](#影片ppt連結-)
+  - [Grafana Graph](#Grafana-Graph)
 
 ## 基本架構圖
 
@@ -27,3 +28,9 @@
 
 ### [PPT](https://docs.google.com/presentation/d/1tQe05gncTl-CJvk5dt6QzU1edvb3t6xSlCecpbbTogA/edit?usp=sharing)
 
+## Grafana Graph
+
+![Grafana png](grafana.png)
+
+| 指標 | 名稱 | 說明 
+|------|------|-----|
