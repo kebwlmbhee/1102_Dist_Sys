@@ -9,7 +9,7 @@
   - [Grafana Graph](#Grafana-Graph)
 
 ## 基本架構圖
-
+![architecture picture](architecture.jpg)
 ## 功能性和非功能性
 
 ## 節點功能
