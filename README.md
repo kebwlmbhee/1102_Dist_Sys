@@ -6,7 +6,7 @@
   - [節點功能](#節點功能)
   - [操作步驟](#操作步驟)
   - [影片、PPT連結 <a name="special-title"></a>](#影片ppt連結-)
-  - [Grafana Graph](#Grafana-Graph)
+  - [Grafana Graph for MySQL](#Grafana-Graph-for-MySQL)
 
 ## 基本架構圖
 ![architecture picture](architecture.jpg)
