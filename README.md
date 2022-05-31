@@ -28,7 +28,7 @@
 
 ### [PPT](https://docs.google.com/presentation/d/1tQe05gncTl-CJvk5dt6QzU1edvb3t6xSlCecpbbTogA/edit?usp=sharing)
 
-## Grafana Graph
+## Grafana Graph for MySQL
 
 ![Grafana png](Grafana.png)
 
