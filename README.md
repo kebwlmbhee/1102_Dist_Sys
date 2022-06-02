@@ -12,6 +12,25 @@
 ![architecture picture](architecture.jpg)
 ## 功能性和非功能性
 
+### 功能性
+
+Prometheus的功能是做**系統偵測**的部分，由於有使用Grafana做視覺化
+
+所以會獲得如以下的圖
+
+<img src="One.jpeg" width="1000" height="400"/>
+
+如果出現錯誤，會發出Alert，來利用Alertmanager寄信，如圖
+
+<img src="Alert_Manage.jpeg" width="800" height="500"/>
+
+### 非功能性
+#### 5分鐘內prometheus可處理的資料量
+![Feature jpeg](Feature.jpeg)
+分別是http_request 平均增長率(左上)，http_request 總數(左下)，個別 http_request 數(右)
+
+左下圖，取最後一分鐘(23:34~23:35)估算 => 750*3 + 700 = 2950 http_request/min，一分鐘能處理 2950 個 http 請求
+
 ## 節點功能
 
 ## 操作步驟
