@@ -43,7 +43,7 @@ Prometheus的功能是做**系統偵測**的部分，由於有使用Grafana做�
 
 ## 影片、PPT連結 <a name="special-title"></a>
 
-### [影片]()
+### [影片](https://www.youtube.com/watch?v=E7UG9j0qzro)
 
 ### [PPT](https://docs.google.com/presentation/d/1tQe05gncTl-CJvk5dt6QzU1edvb3t6xSlCecpbbTogA/edit?usp=sharing)
 
