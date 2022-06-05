@@ -34,6 +34,66 @@ Prometheus的功能是做**系統偵測**的部分，由於有使用Grafana做�
 
 ## 節點功能
 
+
+
+### Prometheus
+![](https://i.imgur.com/5U8csQR.jpg)
+
+Prometheus節點做為整個系統的中樞，主要是使用時間序列資料庫存取各監控節點的資料，再將資料格式化成外部運用的型態。
+
+
+### SQL Exporter
+![](https://i.imgur.com/mya8t05.jpg)
+
+
+SQL Exporter為 Prometheus團隊開發出來的獨立Library，可以透過監控選定的資料庫，並將資料轉換成Prometheus主機可以使用的資料型態，其優點為支援線上所有主流資料庫，這裡使用MySQL。
+
+### Server Exporter
+![](https://i.imgur.com/kjc3Zeo.jpg)
+
+Server Exporter為本組設計用來監控網頁是否運作正常的工具，撰寫語言為Python，透過此工具，可以知道監控節點的狀態，我們使用它監控ApacheTomEE以及Yahoo股市網頁。
+
+### MySQL
+![](https://i.imgur.com/01RfgLx.jpg)
+
+是一個開放原始碼的關聯式資料庫管理系統，MySQL在過去由於效能高、成本低、可靠性好，已經成為最流行的開源資料庫，因此被廣泛地應用在Internet上的中小型網站中。隨著MySQL的不斷成熟，它也逐漸用於更多大規模網站和應用，比如維基百科、Google和Facebook等網站。
+
+
+### Yahoo! 股市
+![](https://i.imgur.com/zOu9j1o.png)
+
+Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨及選擇權分類報價、港滬深股、美股、財經新聞等資訊。
+
+### ApacheTomEE
+![](https://i.imgur.com/lGESzkJ.png)
+
+
+
+
+### Grafana
+![](https://i.imgur.com/A0iGCOl.png)
+
+Grafana為Prometheus官方推薦使用的資料視覺化軟體，提供線上以及本機使用，其特點為支援非常廣大的資料型態和提供目前所有主流的資料流框架，而客製化的圖表選項以及豐富的社群支援也是讓Grafana如虎添翼。
+Prometheus主機提供給Grafana所需要的資料，而Grafana在進行監控的同時，可以依據數據的變化以及可客製化的閥值選項進行預警。
+
+### AlertManager
+![](https://i.imgur.com/LOABXWN.png)
+
+AlertManager為Prometheus團隊開發出來作為支持原生Prometheus主機的預警系統，特點為不需要刻意透過其他的第三方程式，透過資料的檢閱以及偵測即可以發出預警，原生的好處為相容性高。
+
+### Gmail
+![](https://i.imgur.com/OUxFiLG.jpg)
+
+Gmail是我們這次使用的預警出口，AlertManager以及Grafana的預警系統都會在我們設定的監控閥值下送出信件警告使用者。
+
+
+
+
+
+
+
+
+
 ## 操作步驟
 
 ### [Server_Exporter](server%20exporter/README.md)
