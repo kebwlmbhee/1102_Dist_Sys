@@ -1,4 +1,7 @@
 # Web States Alert使用說明
+## 事前工作
+下載Prometheus官方的alertmanger，[下載網址](https://prometheus.io/download/#alertmanager)
+
 ## Alert Manager 使用說明
 - 撰寫alertmanager所需要的設定檔，[詳細設定](https://prometheus.io/docs/alerting/latest/configuration/)
 
