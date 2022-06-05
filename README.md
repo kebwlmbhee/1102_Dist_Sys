@@ -7,6 +7,7 @@
   - [操作步驟](#操作步驟)
   - [影片、PPT連結 <a name="special-title"></a>](#影片ppt連結-)
   - [Grafana Graph for MySQL](#Grafana-Graph-for-MySQL)
+  - [補充](#補充)
 
 ## 基本架構圖
 ![architecture picture](architecture.jpg)
@@ -79,3 +80,6 @@ Prometheus的功能是做**系統偵測**的部分，由於有使用Grafana做�
 | MySQL Table Open Cache Status | 打開 Table 的快取狀態 | -- |
 | MySQL Open Tables | 打開 Table 的數量 | -- |
 | MySQL Table Definition Cache | 所有 Table 快取 | -- |
+
+## 補充
+### 資料庫程式碼位於 CustomerInfo/src/main 的 java/com/example/customerinfo 及 webapp 下
