@@ -67,7 +67,7 @@ Yahoo!奇摩股市提供您當日行情、大盤走勢、類股走勢、期貨�
 ### ApacheTomEE
 ![](https://i.imgur.com/lGESzkJ.png)
 
-TomEE是JavaEE的伺服器，是由Tomcat演化而來，並融合JavaEE的特性，諸如EJB、CDI、JPS、JSF等，由於良好的嵌入性質及小巧的內存空間，使其也適合在cloud-native的環境中執行
+TomEE是JavaEE的伺服器，是由Tomcat演化而來，並融合JavaEE的特性，如EJB、CDI、JPS、JSF等，由於其良好的嵌入性質及小巧的內存空間，使其也適合在cloud-native的環境中執行
 
 
 ### Grafana
