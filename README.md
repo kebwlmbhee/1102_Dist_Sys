@@ -100,7 +100,7 @@ Gmail是我們這次使用的預警出口，AlertManager以及Grafana的預警�
 
 ### [Web States Alert](Server監控/README.md)
 
-### [MySQL & MySQL_Exporter & Grafana](https://docs.google.com/document/d/1xd6boe9BuJ7gB__l12_fa_s02MIc0rkNlu8X-ZMbxik/edit)
+### [MySQL & MySQL_Exporter & Grafana](MySQL-Grafana.pdf)
 
 ## 影片、PPT連結 <a name="special-title"></a>
 
