@@ -106,7 +106,7 @@ Gmail是我們這次使用的預警出口，AlertManager以及Grafana的預警�
 
 ### [影片](https://www.youtube.com/watch?v=E7UG9j0qzro)
 
-### [PPT](https://docs.google.com/presentation/d/1tQe05gncTl-CJvk5dt6QzU1edvb3t6xSlCecpbbTogA/edit?usp=sharing)
+### [PPT](第八組%20Prometheus.pptx)
 
 ## Grafana Graph for MySQL
 
